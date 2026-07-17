@@ -103,12 +103,25 @@ select{
 
 }
 
+
 .container{
 
     width:min(92%,var(--container));
 
     margin:auto;
 
+}
+.video-background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*=========================================

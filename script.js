@@ -764,6 +764,21 @@ document.querySelectorAll("img").forEach(img=>{
 
 });
 
+
+window.addEventListener("scroll", () => {
+
+        const offset = window.pageYOffset;
+
+        if (videoBackground) {
+
+            videoBackground.style.transform =
+
+                `translateY(${offset * .25}px)`;
+
+        }
+
+    });
+
 /*=========================================
         LOG DO TEMPLATE
 =========================================*/
